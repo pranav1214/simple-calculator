@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h3 class="text-center mt-3">Simple Calculator</h3>
+    <div class="row">
+        <table class="text-center">
+            <tr>
+            <td class="col-lg-1"></td>
+            <td><input type="button" class="btn btn-primary" value="c" onclick="clr()"/> </td>
+            <td colspan="3"><input type="text" id="calc"/></td>
+            </tr>
+
+            <tr>
+            <td class="col-lg-1"></td>
+            <td><input type="button" class="btn btn-primary" value="+" onclick="dis('+')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="3" onclick="dis('3')"/> </td>
+            </tr>
+            
+            <tr>
+            <td class="col-lg-1"></td>
+            <td><input type="button" class="btn btn-primary" value="-" onclick="dis('-')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="6" onclick="dis('6')"/> </td>
+            </tr>
+            
+            <tr>
+            <td class="col-lg-1"></td>
+            <td><input type="button" class="btn btn-primary" value="*" onclick="dis('*')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="9" onclick="dis('9')"/> </td>
+            </tr>
+            
+            <tr>
+            <td class="col-lg-1"></td>
+            <td><input type="button" class="btn btn-primary" value="/" onclick="dis('/')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="0" onclick="dis('0')"/> </td>
+            <td><input type="button" class="btn btn-primary" value="=" onclick="solve()"/> </td>
+            </tr>
+            </table>            
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
